@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -6,9 +6,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="stylesheet" href="Calculator.css">
+  <link rel="stylesheet" href="portfolio-theme.css">
 </head>
 
-<body class="min-h-screen flex items-center justify-center bg-black text-cyan-300 overflow-hidden">
+<body class="min-h-screen flex items-center justify-center bg-black text-cyan-300 overflow-hidden theme-page">
 
 <div class="fixed inset-0 -z-10">
   <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(34,211,238,0.08),transparent_60%)]"></div>
@@ -26,28 +27,28 @@
     class="w-full h-20 mb-3 text-right text-4xl px-4 bg-black border border-cyan-400/30 rounded-xl text-cyan-300 shadow-inner animate-pulse">
 
   <div id="history" class="h-24 mb-4 overflow-y-auto text-xs text-cyan-500 border border-cyan-400/20 rounded-lg p-2">
-    <div>READY…</div>
+    <div>READY...</div>
   </div>
 
   <div class="grid grid-cols-5 gap-2 text-sm">
 
     <button class="btn red" onclick="clr()">CLR</button>
     <button class="btn" onclick="del()">DEL</button>
-    <button class="btn" onclick="fn('sqrt')">√</button>
-    <button class="btn" onclick="fn('square')">x²</button>
-    <button class="btn op" onclick="add('/')">÷</button>
+    <button class="btn" onclick="fn('sqrt')">sqrt</button>
+    <button class="btn" onclick="fn('square')">x2</button>
+    <button class="btn op" onclick="add('/')">/</button>
 
     <button class="btn" onclick="add('7')">7</button>
     <button class="btn" onclick="add('8')">8</button>
     <button class="btn" onclick="add('9')">9</button>
     <button class="btn" onclick="fn('sin')">sin</button>
-    <button class="btn op" onclick="add('*')">×</button>
+    <button class="btn op" onclick="add('*')">x</button>
 
     <button class="btn" onclick="add('4')">4</button>
     <button class="btn" onclick="add('5')">5</button>
     <button class="btn" onclick="add('6')">6</button>
     <button class="btn" onclick="fn('cos')">cos</button>
-    <button class="btn op" onclick="add('-')">−</button>
+    <button class="btn op" onclick="add('-')">-</button>
 
     <button class="btn" onclick="add('1')">1</button>
     <button class="btn" onclick="add('2')">2</button>
@@ -63,14 +64,15 @@
   </div>
 
   <p class="mt-4 text-center text-xs text-cyan-500">
-    Keyboard Enabled • Scientific Mode Active
+    Keyboard Enabled - Scientific Mode Active
   </p>
 
   <a href="index.html" class="block mt-3 text-center text-cyan-400 hover:text-cyan-300">
-    ← Return to Portfolio
+    <- Return to Portfolio
   </a>
 </div>
 
 <script src="Calculator.js"></script>
 </body>
 </html>
+

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -8,9 +8,10 @@
   <script src="https://cdn.tailwindcss.com"></script>
 
   <link rel="stylesheet" href="temperature.css">
+  <link rel="stylesheet" href="portfolio-theme.css">
 </head>
 
-<body class="min-h-screen flex items-center justify-center bg-gradient-to-br from-[#020617] via-[#020b1c] to-[#020617] text-white">
+<body class="min-h-screen flex items-center justify-center bg-gradient-to-br from-[#020617] via-[#020b1c] to-[#020617] text-white theme-page">
 
   <div class="fixed inset-0 -z-10">
     <div class="absolute -top-40 -left-40 w-96 h-96 bg-purple-600/30 rounded-full blur-3xl"></div>
@@ -20,7 +21,7 @@
 
   <div class="card w-[90%] max-w-md text-center">
 
-    <h1 class="text-2xl font-bold mb-6">🌡️ Temperature Converter</h1>
+    <h1 class="text-2xl font-bold mb-6">Temperature Converter</h1>
 
     <input
       id="celsius"
@@ -37,7 +38,7 @@
     <div id="result" class="text-lg text-gray-300"></div>
 
     <a href="index.html" class="block mt-6 text-blue-400 hover:underline">
-      ← Back to Portfolio
+      <- Back to Portfolio
     </a>
 
   </div>
@@ -49,3 +50,4 @@
   <script defer src="/_vercel/speed-insights/script.js"></script>
 </body>
 </html>
+

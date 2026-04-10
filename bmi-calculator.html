@@ -1,12 +1,13 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>BMI Calculator</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="portfolio-theme.css">
 </head>
-<body class="min-h-screen flex items-center justify-center bg-gradient-to-br from-[#020617] via-[#020b1c] to-[#020617] text-white">
+<body class="min-h-screen flex items-center justify-center bg-gradient-to-br from-[#020617] via-[#020b1c] to-[#020617] text-white theme-page">
 
   <!-- Background Glow -->
   <div class="fixed inset-0 -z-10">
@@ -18,7 +19,7 @@
   <!-- Card -->
   <div class="bg-[#0f172a]/80 backdrop-blur p-8 rounded-2xl shadow-xl border border-white/10 w-[90%] max-w-md text-center">
 
-    <h1 class="text-2xl font-bold mb-2">⚖️ BMI Calculator</h1>
+    <h1 class="text-2xl font-bold mb-2">BMI Calculator</h1>
     <p class="text-gray-400 mb-6">Calculate your Body Mass Index</p>
 
     <input id="weight"
@@ -42,7 +43,7 @@
 
     <button onclick="resetFields()" class="text-sm text-blue-400 hover:underline">Reset</button>
 
-    <a href="index.html" class="block mt-6 text-blue-400 hover:underline">← Back to Portfolio</a>
+    <a href="index.html" class="block mt-6 text-blue-400 hover:underline"><- Back to Portfolio</a>
 
   </div>
 
@@ -88,3 +89,4 @@
   <script defer src="/_vercel/speed-insights/script.js"></script>
 </body>
 </html>
+

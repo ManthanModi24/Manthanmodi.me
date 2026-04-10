@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -8,9 +8,10 @@
   <script src="https://cdn.tailwindcss.com"></script>
 
   <link rel="stylesheet" href="memory-game.css">
+  <link rel="stylesheet" href="portfolio-theme.css">
 </head>
 
-<body class="min-h-screen flex items-center justify-center bg-gradient-to-br from-[#020617] via-[#020b1c] to-[#020617] text-white">
+<body class="min-h-screen flex items-center justify-center bg-gradient-to-br from-[#020617] via-[#020b1c] to-[#020617] text-white theme-page">
 
   <div class="fixed inset-0 -z-10">
     <div class="absolute -top-40 -left-40 w-96 h-96 bg-purple-600/30 rounded-full blur-3xl"></div>
@@ -20,7 +21,7 @@
 
   <div class="bg-[#0f172a]/80 backdrop-blur p-8 rounded-2xl shadow-xl border border-white/10 w-[90%] max-w-md text-center">
 
-    <h1 class="text-2xl font-bold mb-2">🧠 Memory Card Game</h1>
+    <h1 class="text-2xl font-bold mb-2">Memory Card Game</h1>
     <p id="status" class="text-gray-300 mb-4">Find all matching pairs!</p>
 
     <div id="game" class="grid grid-cols-4 gap-3 w-64 mx-auto mb-6"></div>
@@ -30,7 +31,7 @@
     </button>
 
     <a href="index.html" class="block mt-6 text-blue-400 hover:underline">
-      ← Back to Portfolio
+      <- Back to Portfolio
     </a>
 
   </div>
@@ -42,3 +43,4 @@
   <script defer src="/_vercel/speed-insights/script.js"></script>
 </body>
 </html>
+

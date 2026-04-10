@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -6,9 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="inr-to-usd.css">
+  <link rel="stylesheet" href="portfolio-theme.css">
 </head>
 
-<body class="min-h-screen flex items-center justify-center bg-gradient-to-br from-[#020617] via-[#020b1c] to-[#020617] text-white">
+<body class="min-h-screen flex items-center justify-center bg-gradient-to-br from-[#020617] via-[#020b1c] to-[#020617] text-white theme-page">
 
   <div class="fixed inset-0 -z-10">
     <div class="absolute -top-40 -left-40 w-96 h-96 bg-purple-600/30 rounded-full blur-3xl"></div>
@@ -17,7 +18,7 @@
   </div>
 
   <div class="card w-[90%] max-w-md text-center">
-    <h1 class="text-2xl font-bold mb-2">💱 INR to USD Converter</h1>
+    <h1 class="text-2xl font-bold mb-2">INR to USD Converter</h1>
     <p class="text-gray-400 mb-6">Convert Indian Rupees to US Dollars</p>
 
     <input id="inr" type="number" placeholder="Enter amount in INR" class="input">
@@ -33,7 +34,7 @@
     </button>
 
     <a href="index.html" class="block mt-6 text-blue-400 hover:underline">
-      ← Back to Portfolio
+      <- Back to Portfolio
     </a>
   </div>
 
@@ -44,3 +45,4 @@
   <script defer src="/_vercel/speed-insights/script.js"></script>
 </body>
 </html>
+
