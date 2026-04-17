@@ -13,7 +13,8 @@
     }
   </script>
 
-
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="portfolio-theme.css">
 </head>
@@ -40,7 +41,7 @@
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </nav>
-      <button id="menuBtn" class="menu-btn" aria-label="Open menu">=</button>
+      <button id="menuBtn" class="menu-btn" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileNav">&#9776;</button>
     </div>
     <div class="shell">
       <nav id="mobileNav" class="mobile-nav">
@@ -216,12 +217,14 @@
 
     if (menuBtn && mobileNav) {
       menuBtn.addEventListener("click", function () {
-        mobileNav.classList.toggle("open");
+        const isOpen = mobileNav.classList.toggle("open");
+        menuBtn.setAttribute("aria-expanded", String(isOpen));
       });
 
       mobileNav.querySelectorAll("a").forEach(function (link) {
         link.addEventListener("click", function () {
           mobileNav.classList.remove("open");
+          menuBtn.setAttribute("aria-expanded", "false");
         });
       });
     }
